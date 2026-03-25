@@ -1,5 +1,9 @@
 # backend/identity_service/main.py
 
+import utils.clients
+import utils.http_session
+import utils.transport
+import utils.session
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 from database.db_connection import get_db
